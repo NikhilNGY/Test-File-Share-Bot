@@ -55,7 +55,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Bots Channel", url="https://telegram.me/OmegaBots")
+                        InlineKeyboardButton("Bots Channel", url="https://telegram.me/KR_FILM")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot")
@@ -107,7 +107,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://telegram.me/OmegaBots)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://telegram.me/Moviesz_Group)",
                                      disable_web_page_preview=True)
             return
 
@@ -330,7 +330,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Bots Channel", url="https://telegram.me/OmegaBots")
+                        InlineKeyboardButton("Bots Channel", url="https://telegram.me/KR_FILM")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot")
@@ -345,7 +345,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://telegram.me/OmegaBots).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://telegram.me/Moviesz_Group).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -370,7 +370,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://telegram.me/OmegaBots).",
+                    text="Something went Wrong. Contact my [Support Group](https://telegram.me/Moviesz_Group).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
