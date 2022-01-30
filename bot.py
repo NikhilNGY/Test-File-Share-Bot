@@ -382,7 +382,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Bots Channel", url="https://telegram.me/OmegaBots")
+                        InlineKeyboardButton("Bots Channel", url="https://telegram.me/KR_FILM")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot")
